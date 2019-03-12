@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Article(models.Model):
-    title = models.CharField(help_text="title model help_text", max_length=255, blank=False, unique=True)
+    title = models.CharField(help_text="title model 111 help_text", max_length=255, blank=False, unique=True)
     body = models.TextField(help_text="article model help_text", max_length=5000, blank=False)
     slug = models.SlugField(help_text="slug model help_text", unique=True, blank=True)
     date_created = models.DateTimeField(auto_now_add=True)

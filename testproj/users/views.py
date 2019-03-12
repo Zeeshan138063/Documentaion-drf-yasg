@@ -16,7 +16,7 @@ class UserList(APIView):
     @swagger_auto_schema(
         query_serializer=UserListQuerySerializer,
         responses={200: UserSerializerrr(many=True)},
-        tags=['Users'],
+        tags=['Usersssss'],
     )
     def get(self, request):
         queryset = User.objects.all()
@@ -24,7 +24,7 @@ class UserList(APIView):
         return Response(serializer.data)
 
     @swagger_auto_schema(
-        operation_description="apiview post description override",
+        operation_description="apiview post description override hreh",
         request_body=openapi.Schema(
             type=openapi.TYPE_OBJECT,
             required=['username'],

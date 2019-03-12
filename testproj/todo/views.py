@@ -5,7 +5,8 @@ from drf_yasg.utils import swagger_auto_schema
 
 from .models import Todo, TodoAnother, TodoTree, TodoYetAnother
 from .serializer import (
-    TodoAnotherSerializer, TodoRecursiveSerializer, TodoSerializer, TodoTreeSerializer, TodoYetAnotherSerializer
+    TodoAnotherSerializer, TodoRecursiveSerializer, TodoSerializer,
+    TodoTreeSerializer, TodoYetAnotherSerializer
 )
 
 

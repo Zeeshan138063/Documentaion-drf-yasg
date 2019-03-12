@@ -9,9 +9,10 @@ from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 
 swagger_info = openapi.Info(
-    title="Snippets API",
+    title="Zeeshan API",
     default_version='v1',
-    description="""This is a demo project for the [drf-yasg](https://github.com/axnsan12/drf-yasg) Django Rest Framework library.
+    description="""This is a demo project for the 
+    [drf-yasg](https://github.com/axnsan12/drf-yasg) Django Rest Framework library.
 
 The `swagger-ui` view can be found [here](/cached/swagger).  
 The `ReDoc` view can be found [here](/cached/redoc).  
@@ -63,7 +64,7 @@ urlpatterns = [
     url(r'^cached/swagger/$', SchemaView.with_ui('swagger', cache_timeout=None), name='cschema-swagger-ui'),
     url(r'^cached/redoc/$', SchemaView.with_ui('redoc', cache_timeout=None), name='cschema-redoc'),
 
-    url(r'^$', root_redirect),
+    url(r'^root/$', root_redirect),
 
     url(r'^snippets/', include('snippets.urls')),
     url(r'^articles/', include('articles.urls')),
